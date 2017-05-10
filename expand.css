@@ -1,0 +1,23 @@
+section { /* DELETE */
+  margin-bottom: 25px;
+}
+
+.expand_container {
+  position: relative;
+}
+
+.expand_header:hover {
+  cursor: pointer;
+}
+
+.expand_content {
+  max-height: 0;
+  overflow-y: hidden;
+  transition: all .25s ease-out;
+}
+
+.expand_open {
+  transition: all .25s ease-in;
+  max-height: 500px;
+  overflow-y: scroll;
+}
