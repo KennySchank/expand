@@ -51,7 +51,7 @@ function expand_getClosestAncestor(element, className) {
   }
   else
   { 
-    return getClosestAncestor(parent, className);
+    return expand_getClosestAncestor(parent, className);
   }
 }
 
@@ -85,7 +85,7 @@ function expand_getClosestChild(element, className) {
   {
     for (let i = 0; !is_found && i < children.length; i++)
     {
-      child = getClosestChild(children[i], className);
+      child = expand_getClosestChild(children[i], className);
     }
   }
 
